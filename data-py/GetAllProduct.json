@@ -1,0 +1,222 @@
+[
+    {
+        "productId": "P001",
+        "productName": "Notebook Lenovo",
+        "sku": "SKU-001",
+        "unitOfMeasure": "Unidad",
+        "cost": 350000,
+        "salePrice": 420000,
+        "category": "Electrónica",
+        "location": "A1",
+        "active": true,
+        "inventoryMovements": [
+            {
+                "movementId": "M001",
+                "date": "2025-05-01T12:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 10,
+                "orderId": "PO-1001",
+                "notes": "Recepción de proveedor"
+            },
+            {
+                "movementId": "M003",
+                "date": "2025-05-03T17:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 2,
+                "orderId": "SO-1001",
+                "notes": "Venta a cliente final"
+            },
+            {
+                "movementId": "M006",
+                "date": "2025-05-06T12:30:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 1,
+                "orderId": "SO-1003",
+                "notes": "Venta directa"
+            },
+            {
+                "movementId": "M007",
+                "date": "2025-05-07T13:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 5,
+                "orderId": "PO-1004",
+                "notes": "Nueva reposición"
+            },
+            {
+                "movementId": "M008",
+                "date": "2025-05-08T17:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 3,
+                "orderId": "SO-1004",
+                "notes": "Venta con descuento"
+            },
+            {
+                "movementId": "M009",
+                "date": "2025-05-09T14:30:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 4,
+                "orderId": "PO-1005",
+                "notes": "Stock técnico"
+            },
+            {
+                "movementId": "M010",
+                "date": "2025-05-10T18:30:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 2,
+                "orderId": "SO-1005",
+                "notes": "Venta minorista"
+            },
+            {
+                "movementId": "M011",
+                "date": "2025-05-11T12:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 5,
+                "orderId": "PO-1006",
+                "notes": "Nueva compra por aumento de demanda"
+            },
+            {
+                "movementId": "M012",
+                "date": "2025-05-12T13:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 1,
+                "orderId": "SO-1006",
+                "notes": "Venta menorista"
+            },
+            {
+                "movementId": "M013",
+                "date": "2025-05-13T18:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 1,
+                "orderId": "SO-1007",
+                "notes": "Envío a cliente frecuente"
+            },
+            {
+                "movementId": "M014",
+                "date": "2025-05-14T14:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 3,
+                "orderId": "PO-1007",
+                "notes": "Refuerzo stock temporal"
+            },
+            {
+                "movementId": "M015",
+                "date": "2025-05-15T17:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 6,
+                "orderId": "SO-1008",
+                "notes": "Descuento especial por campaña"
+            },
+            {
+                "movementId": "M016",
+                "date": "2025-05-16T12:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 8,
+                "orderId": "PO-1009",
+                "notes": "Compra masiva"
+            },
+            {
+                "movementId": "M017",
+                "date": "2025-05-17T12:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 1,
+                "orderId": "SO-1009",
+                "notes": "Venta menorista"
+            }
+        ],
+        "currentStock": {
+            "productId": "P001",
+            "quantity": 8,
+            "lastUpdated": "2025-05-03T17:00:00.000+00:00",
+            "totalInventoryCost": 2800000.0
+        },
+        "predictorStocks": [
+            {
+                "id": {},
+                "predictedQuantity": 6,
+                "predictedSales": 252000.0,
+                "isHoliday": false,
+                "note": "Proyección regular"
+            }
+        ]
+    },
+    {
+        "productId": "P002",
+        "productName": "Mouse Logitech",
+        "sku": "SKU-002",
+        "unitOfMeasure": "Unidad",
+        "cost": 8000,
+        "salePrice": 12000,
+        "category": "Accesorios",
+        "location": "A2",
+        "active": true,
+        "inventoryMovements": [
+            {
+                "movementId": "M002",
+                "date": "2025-05-02T13:30:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 50,
+                "orderId": "PO-1002",
+                "notes": "Reposición bodega"
+            },
+            {
+                "movementId": "M005",
+                "date": "2025-05-05T19:00:00.000+00:00",
+                "movementType": "OUTBOUND",
+                "quantity": 5,
+                "orderId": "SO-1002",
+                "notes": "Salida para entrega a cliente"
+            }
+        ],
+        "currentStock": {
+            "productId": "P002",
+            "quantity": 45,
+            "lastUpdated": "2025-05-05T19:00:00.000+00:00",
+            "totalInventoryCost": 360000.0
+        },
+        "predictorStocks": [
+            {
+                "id": {},
+                "predictedQuantity": 30,
+                "predictedSales": 360000.0,
+                "isHoliday": false,
+                "note": "Incremento esperado por campaña"
+            }
+        ]
+    },
+    {
+        "productId": "P003",
+        "productName": "Monitor Samsung 24",
+        "sku": "SKU-003",
+        "unitOfMeasure": "Unidad",
+        "cost": 70000,
+        "salePrice": 95000,
+        "category": "Electrónica",
+        "location": "A3",
+        "active": true,
+        "inventoryMovements": [
+            {
+                "movementId": "M004",
+                "date": "2025-05-04T18:00:00.000+00:00",
+                "movementType": "INBOUND",
+                "quantity": 15,
+                "orderId": "PO-1003",
+                "notes": "Compra por promoción"
+            }
+        ],
+        "currentStock": {
+            "productId": "P003",
+            "quantity": 15,
+            "lastUpdated": "2025-05-04T18:00:00.000+00:00",
+            "totalInventoryCost": 1050000.0
+        },
+        "predictorStocks": [
+            {
+                "id": {},
+                "predictedQuantity": 12,
+                "predictedSales": 1140000.0,
+                "isHoliday": true,
+                "note": "Aumento por fecha especial"
+            }
+        ]
+    }
+]

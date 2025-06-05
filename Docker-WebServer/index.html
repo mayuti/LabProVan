@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Predicción Inteligente de Stock</title>
+    <meta http-equiv="refresh" content="60"> <!-- Refrescar cada 60 segundos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.4em;
+            color: #34495e;
+            margin-bottom: 40px;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .placeholder {
+            font-size: 1.2em;
+            color: #888;
+            margin: 40px 0;
+        }
+        .integrantes {
+            margin-top: 40px;
+            font-size: 1em;
+            color: #555;
+        }
+        .integrantes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .integrantes ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* espacio entre nombres */
+        flex-wrap: wrap; /* opcional: hace que se acomoden si no entran en una sola línea */
+        }
+        .integrantes li {
+        margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Panel de Predicción Inteligente de Stock</h1>
+    <h2>Modelo de Machine Learning con Scikit-Learn</h2>
+    <br>
+
+    <div id="contenedor-grafico">
+        <div class="placeholder" id="mensaje">
+            Verificando disponibilidad de la estadística...
+        </div>
+    </div>
+
+    <div class="integrantes">
+        <br>
+        <h3>Integrantes:</h3>
+        <ul>
+            <li>Francisco Carracedo</li>
+            <li>Cristian Mayuti</li>
+            <li>Carlos Vizcaino</li>
+            <li>Florencia Murano</li>
+            <li>Marcos Castillo</li>
+        </ul>
+    </div>
+
+    <script>
+        const contenedor = document.getElementById("contenedor-grafico");
+        const mensaje = document.getElementById("mensaje");
+
+        fetch("/graph")
+            .then(response => {
+                if (response.ok) {
+                    const img = document.createElement("img");
+                    img.src = "/graph?" + new Date().getTime(); // evitar caché
+                    contenedor.innerHTML = ""; // limpiar mensaje
+                    contenedor.appendChild(img);
+                } else {
+                    mensaje.textContent = "Estadística no disponible. Aguarde unos instantes mientras se generan los datos.";
+                }
+            })
+            .catch(() => {
+                mensaje.textContent = "Error al verificar disponibilidad del gráfico.";
+            });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+docker build -t simple-webserver .
+
+
+docker rm -f webserver
+
+docker run -d -p 80:8080 --name webserver `
+  -v "C:\Users\admin\Documents\LabProVan\Docker-WebServer\index.html:/app/index.html" `
+  -v "C:\Users\admin\Documents\LabProVan\data-py\graphPredictStock.png:/app/data-py/graphPredictStock.png" `
+  simple-webserver
+

@@ -1,0 +1,8 @@
+docker run -it --name APG-Container -v "C:\Users\admin\Documents\LabProVan:/app" api_pred_graph-image bash
+
+docker exec -it APG-Container bash
+
+docker start -ai APG-Container
+
+docker stop APG-Container
+
