@@ -90,6 +90,7 @@ git submodule update --init --recursive
 
 - Python 3.x, Flask, Pandas, Matplotlib
 - Java con H2 Database
+- Postman
 - Git + Git Submodules
 - Docker
 - HTML, CSS
