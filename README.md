@@ -11,14 +11,14 @@
 **Año:** 2025  
 **Trabajo:** Proyecto Integrador - Gestión de Stock con Predicción  
 **Carrera:** Licenciatura en Tecnologías Digitales  
-**Universidad:** [Nombre de tu institución, si aplica]
+**Universidad:** Universidad de la Ciudad de Buenos Aires
 
 **Integrantes del equipo:**
-- Francisco Carracedo – francisco.carracedo@email.com
-- Cristian Mayuti – cristian.mayuti@gmail.com
-- Carlos Vizcaino – carlos.vizcaino@email.com
-- Florencia Murano – florencia.murano@email.com
-- Marcos Castillo – marcos.castillo@email.com
+- Francisco Carracedo
+- Cristian Mayuti
+- Carlos Vizcaino
+- Florencia Murano
+- Marcos Castillo
 
 ---
 
