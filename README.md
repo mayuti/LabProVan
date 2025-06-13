@@ -1,4 +1,5 @@
 
+
 # 📦 LabProVan - Plataforma de Gestión de Stock
 
 > Trabajo Práctico Final – Programación de Vanguardia 2025
@@ -41,16 +42,17 @@ Incluye:
 
 ```
 LabProVan/
-├── stock/                ← Submódulo Git con backend Java de stock
-├── app/
-│   ├── data-py/          ← Archivos de entrada y salida (.json, .csv, gráficos)
-│   ├── predict.py        ← Script de predicción con regresión lineal
-│   └── ...
+├── stock/                  ← Submódulo Git con backend Java de stock
+├── Script-Python/          ← Scripts en Python refactorizados
+│   ├── graph_predict_stock.py   ← Generación del gráfico de predicción
+│   └── predictor_product.py     ← Predicción de stock por producto
+├── data-py/                ← Archivos de entrada/salida (.json, .csv, gráficos)
+│   └── .gitkeep            ← Archivo vacío para mantener la carpeta en Git
 ├── webserver/
-│   └── index.html        ← Frontend visual del proyecto
-├── Dockerfile            ← Imagen web del sistema
-├── .gitmodules           ← Configuración del submódulo 'stock'
-└── README.md             ← Este archivo
+│   └── index.html          ← Interfaz web visual del proyecto
+├── .gitignore              ← Exclusiones de archivos del repositorio
+├── .gitmodules             ← Configuración del submódulo 'stock'
+└── README.md               ← Este archivo
 ```
 
 ---
@@ -88,13 +90,43 @@ git submodule update --init --recursive
 
 ## 📈 Herramientas y Tecnologías
 
-- Python 3.x, Flask, Pandas, Matplotlib
-- Java con H2 Database
-- Postman
-- Git + Git Submodules
-- Docker
-- HTML, CSS
-- Visual Studio Code
+- **Arquitectura**
+  - Cliente-Servidor basada en HTTP y RESTful API
+  - Formato de datos: JSON
+
+- **Lenguajes y Frameworks**
+  - Python 3.x (Flask, Pandas, Matplotlib)
+  - Java (JDK 1.8+), JDBC, uso de objetos, clases y colecciones (Collections)
+  - Bash scripting
+  - HTML, CSS
+
+- **Bases de Datos**
+  - H2 Database (Java embebida)
+  - Conexión mediante JDBC
+  - SQL básico (SELECT, INSERT, UPDATE, etc.)
+
+- **Control de versiones**
+  - Git y GitHub
+  - Submódulos de Git
+  - Archivo `.gitignore` personalizado
+
+- **Contenedores y despliegue**
+  - Docker
+  - Servidor web simple con contenedor
+
+- **Testing y desarrollo**
+  - JUnit para pruebas unitarias (Java)
+  - Soporte de pruebas automatizadas con Maven
+  - Postman para pruebas de API REST
+  - IDEs: Visual Studio Code / IntelliJ IDEA
+
+- **Gestión de proyectos**
+  - Maven (para estructura y dependencias en proyectos Java)
+
+- **Buenas prácticas aplicadas**
+  - PEP8 (estilo Python)
+  - Nombres significativos y comentarios claros
+  - Uso de convenciones de nombres para test y scripts
 
 ---
 
@@ -103,3 +135,18 @@ git submodule update --init --recursive
 Este proyecto permite validar una arquitectura distribuida compuesta por distintas tecnologías y lenguajes. La integración entre servicios y la separación por módulos demuestra escalabilidad, mantenibilidad y reutilización de componentes.
 
 ---
+
+## 🆕 Mejoras Recientes
+
+### 🔁 Versión actual: v1.1 – Junio 2025
+
+- Refactorización del código en:
+  - `graph_predict_stock.py`: separación en funciones para modularizar y reutilizar el código.
+  - `predictor_product.py`: restructuración funcional para facilitar mantenimiento y pruebas.
+- Incorporación del archivo `.gitignore` para excluir archivos temporales, logs, datos generados, carpetas de entorno virtual y configuraciones locales.
+- Añadido `.gitkeep` para mantener la estructura vacía de `data-py/` sin incluir sus contenidos.
+
+> Estas mejoras permiten una mayor claridad del código, control de versiones más limpio y mayor facilidad de colaboración.
+
+
+
