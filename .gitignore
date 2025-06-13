@@ -1,0 +1,40 @@
+app/data-py/*
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Entornos virtuales
+venv/
+.env/
+.env
+
+# Archivos de Jupyter
+*.ipynb_checkpoints
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos de pruebas o salidas generadas
+*.out
+*.csv
+*.json
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# Carpetas de datos o resultados
+app/data-py/*
+
+# Permitimos mantener la carpeta vacía
+!app/data-py/.gitkeep
